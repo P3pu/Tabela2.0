@@ -1,0 +1,56 @@
+* {
+   
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+html,body{
+   width: 100vw;
+   height: 100vh;
+   background:linear-gradient(90deg,violet,rgb(221, 121, 138),blueviolet,rgb(157, 235, 235));
+   background-size: 5000%,100%;
+
+   animation-name: background;
+   animation-duration: 5s;
+   animation-timing-function: ease-in-out;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+}
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    max-width: 500px;
+      margin: auto;
+      margin-right: auto;
+      text-align: center;
+    
+  }    
+
+
+tbody{
+    text-align: center;
+    
+}    
+
+strong{
+    width: 300px;
+    height: 250px;
+    background-color: rgb(149, 66, 226);
+}    
+
+@keyframes background {
+    to{
+      background-position-x: left;
+    }
+
+    from{
+     background-position-x: right;
+    }
+}
+
+
+
+
+
